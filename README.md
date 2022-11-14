@@ -17,8 +17,6 @@ show that the proposed method outperforms 14 state-of-the-arts on both smallscal
 ## Usage
 Comming soon.
 
-## Experiments
-![Experimental results](./img/Exp_results.png "Experimental results")
 
 ## Contact
 If any question, please contact yufan.liu@ia.ac.cn, or use public issues section of this repository.
