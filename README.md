@@ -1,6 +1,6 @@
 # Cross-Architecture Knowledge Distillation
 
-This is an open source implementation of the paper called "[Cross-Architecture Knowledge Distillation](https://arxiv.org/abs/2207.05273)".
+This is an open source implementation of the paper called "[Cross-Architecture Knowledge Distillation](https://openaccess.thecvf.com/content/ACCV2022/html/Liu_Cross-Architecture_Knowledge_Distillation_ACCV_2022_paper.html)".
 
 > Yufan Liu, Jiajiong Cao, Bing Li, Weiming Hu, Jingting Ding, Liang Li. Cross-Architecture Knowledge Distillation. Asian Conference on Computer Vision (ACCV): Long Beach, China. 2022.12.04-2022.12.08.
 
@@ -9,7 +9,7 @@ This is an open source implementation of the paper called "[Cross-Architecture K
 show that the proposed method outperforms 14 state-of-the-arts on both smallscale and large-scale datasets.*
 
 ## Citation
-If you find IRG useful in your research, please cite our paper: 
+If you find our method useful in your research, please cite our paper: 
 ````
 @InProceedings{Liu_2022_ACCV,
     author    = {Liu, Yufan and Cao, Jiajiong and Li, Bing and Hu, Weiming and Ding, Jingting and Li, Liang},
