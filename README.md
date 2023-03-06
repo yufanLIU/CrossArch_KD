@@ -50,15 +50,15 @@ cp cakd_modified_files/functional.py ${TORCH_NN_PATH}/functional.py
 -step3: run experiments
 ```shell
 #run student baseline
-sh scripts/run_baseline.sh
+sh experiments/run_baseline.sh
 ```
 ```shell
 #run logits KD
-sh scripts/run_logits.sh
+sh experiments/run_logits.sh
 ```
 ```shell
 #run logits CAKD
-sh scripts/run_cakd.sh
+sh experiments/run_cakd.sh
 ```
 
 ## Notice and Performance
