@@ -41,6 +41,7 @@ os.systm('export TORCH_NN_PATH={:s}'.format(torch.nn.__path__[0]))
 ```
 -step2: make modifications to the native torch to extract necessary mid-level outputs for CAKD
 ```shell
+cd CAKD
 cp cakd_modified_files/resnet.py ${TORCHVISION_MODEL_PATH}/resnet.py
 cp cakd_modified_files/vision_transformer.py ${TORCHVISION_MODEL_PATH}/vision_transformer.py
 cp cakd_modified_files/functional.py ${TORCH_NN_PATH}/functional.py
