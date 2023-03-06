@@ -62,7 +62,7 @@ sh experiments/run_cakd.sh
 ```
 
 ## Notice and Performance
-The performance reported in the original paper is produced based on a customized torch (with many customized data augmentation techniques and training tricks). At this end, the performance of student, teacher and the distilled student is relatively higher than the public models. Unfortunately, because of privacy and security concerns, we are not able to provide the full version of this torch. Instead, we make the key codes of CAKD in this repo.
+The performance reported in the original paper is produced based on a customized torch (with many customized data augmentation techniques and training tricks). At this end, the performance of student, teacher and the distilled student is relatively higher than the public models. Unfortunately, because of privacy and security concerns, we are not able to provide the full version of this torch. Instead, we make the key codes of CAKD public in this repo.
 
 Since some customized operations are not available, the performance of student, teacher and the distilled student is lower than that reported in the paper. However, the performance gain compared with competing methods is significant. The performance is provided as below, researchers may consider the reproduced performance in this repo for fair comparisons.
 
