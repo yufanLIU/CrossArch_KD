@@ -66,7 +66,9 @@ The performance reported in the original paper is produced based on a customized
 Since some customized operations are not available, the performance of student, teacher and the distilled student is lower than that reported in the paper. However, the performance gain compared with competing methods is significant. The performance is provided as below, researchers may consider the reproduced performance in this repo for fair comparisons.
 
 STUDENT: TOP1-73.82% TOP5-91.97%
+
 LOGITS : TOP1-74.48% TOP5-92.29%
+
 CAKD   : TOP1-76.21% TOP5-93.09%
 
 ## Contact
