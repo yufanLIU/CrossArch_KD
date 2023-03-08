@@ -67,6 +67,7 @@ The performance reported in the original paper is produced based on a customized
 Since some customized operations are not available, the performance of the student, teacher, and distilled student is lower than that reported in the paper. However, the performance gain compared with competing methods is significant. The performance is provided below, researchers may consider the reproduced performance in this repo for fair comparisons.
 
 
+**Performance on ImageNet.**
 |        Method        |   Top-1  |   Top-5  |
 |        :----:        |  :----:  |  :----:  |
 | Baseline (ResNet50)  |  73.82%  |  91.97%  |
