@@ -39,7 +39,7 @@ os.systm('export TORCHVISION_MODEL_PATH={:s}'.format(torchvision.models.__path__
 import torch
 os.systm('export TORCH_NN_PATH={:s}'.format(torch.nn.__path__[0]))
 ```
--step2: make modifications to the native torch to extract necessary mid-level outputs for CAKD
+- step2: make modifications to the native torch to extract necessary mid-level outputs for CAKD
 ```shell
 cd CAKD
 cp cakd_modified_files/resnet.py ${TORCHVISION_MODEL_PATH}/resnet.py
@@ -47,7 +47,7 @@ cp cakd_modified_files/vision_transformer.py ${TORCHVISION_MODEL_PATH}/vision_tr
 cp cakd_modified_files/functional.py ${TORCH_NN_PATH}/functional.py
 ```
 
--step3: run experiments
+- step3: run experiments
 ```shell
 #run student baseline
 sh experiments/run_baseline.sh
@@ -62,15 +62,19 @@ sh experiments/run_cakd.sh
 ```
 
 ## Notice and Performance
-The performance reported in the original paper is produced based on a customized torch (with many customized data augmentation techniques and training tricks). At this end, the performance of student, teacher and the distilled student is relatively higher than the public models. Unfortunately, because of privacy and security concerns, we are not able to provide the full version of this torch. Instead, we make the key codes of CAKD public in this repo.
+The performance reported in the original paper is produced based on a customized torch (with many customized data augmentation techniques). At this end, the performance of the student, teacher, and distilled student is relatively higher than the public models. Unfortunately, because of privacy and security concerns, we are not able to provide the full version of this torch. Instead, we make the key codes of CAKD public in this repo.
 
-Since some customized operations are not available, the performance of student, teacher and the distilled student is lower than that reported in the paper. However, the performance gain compared with competing methods is significant. The performance is provided as below, researchers may consider the reproduced performance in this repo for fair comparisons.
+Since some customized operations are not available, the performance of the student, teacher, and distilled student is lower than that reported in the paper. However, the performance gain compared with competing methods is significant. The performance is provided below, researchers may consider the reproduced performance in this repo for fair comparisons.
 
-STUDENT: TOP1-73.82% TOP5-91.97%
 
-LOGITS : TOP1-74.48% TOP5-92.29%
+|        Method        |   Top-1  |   Top-5  |
+|        :----:        |  :----:  |  :----:  |
+| Baseline (ResNet50)  |  73.82%  |  91.97%  |
+|       Logits         |  74.48%  |  92.29%  |
+|    CAKD (Ours)       |**76.21%**|**93.09%**|
 
-CAKD   : TOP1-76.21% TOP5-93.09%
+
+
 
 ## Contact
-If any question, please contact yufan.liu@ia.ac.cn or jiajiong.caojiajio@antgroup.com, or use public issues section of this repository.
+If any question, please contact yufan.liu@ia.ac.cn or use public issues section of this repository.
