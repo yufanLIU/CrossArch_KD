@@ -56,6 +56,7 @@ sh experiments/run_baseline.sh
 #run logits KD
 sh experiments/run_logits.sh
 ```
+We adopt native pytorch augmentors to augment the data for adversarial training mentioned in the paper.
 ```shell
 #run logits CAKD
 sh experiments/run_cakd.sh
